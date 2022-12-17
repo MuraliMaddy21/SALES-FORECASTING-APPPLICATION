@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+              href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+              rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link
+              href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+              rel="stylesheet"
+              />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link
+              href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+              rel="stylesheet"
+              />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link
+              href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+              rel="stylesheet"
+              />
+    <body>
+       
+        <div class='main-container'>
+
+            <div class='container'>
+
+                <div class='left-sidebar'>
+
+                    <h2>Dashboard</h2>
+
+                    
+
+                    <div>
+
+                        
+
+                        <a class='left-sidebar-links' href='http://localhost:4200/predict'>FORECAST</a>
+
+                    </div>
+
+                    <div>
+                        <a class='left-sidebar-links' href='http://localhost:4200/upload'>UPLOAD</a>
+                    </div>
+
+                    <div>
+                        <a class='left-sidebar-links' href='http://localhost:4200/visual'>VISUALIZE</a>
+                    </div>
+
+                 
+                    
+                   
+    
+
+
+                </div>
+                
+                <div class='dashboard'>
+                    <div class="WEL">WELCOME {{username}} <br> {{time}}</div> 
+
+                    <div class='top-bar'>
+                    </div>
+
+                    <h2>SALES FORECASTING</h2>
+
+                    <br>
+
+                    <div class="rightbar">
+                        <div class="top">
+                            <p>The Predictions for the requested Period : {{chartdata}}</p>
+                        </div>
+                    <button type="sumbit" (click)="getdata()">Predict</button>
+                    <br>
+                        <canvas id="mychart2" height="100px" width="300px"> </canvas>
+                    </div>
+        
+
+
+                </div>
+                
+
+            </div>
+        </div>
+       
